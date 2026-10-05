@@ -1,0 +1,32 @@
+.table {
+    margin: 0;
+}
+
+.day {
+    margin: 0 0 1rem;
+    overflow: hidden;
+    border: 1px solid #e9ede7;
+    border-radius: 13px;
+}
+
+.dayTitle {
+    margin: 0;
+    padding: 0.8rem 1rem;
+    background: #f4f7f2;
+    color: #34473a;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.mealName {
+    font-weight: 650;
+}
+
+.notSelected {
+    color: #9aa39b;
+}
+
+.unselectedRow td {
+    background: #fbfcfa;
+}

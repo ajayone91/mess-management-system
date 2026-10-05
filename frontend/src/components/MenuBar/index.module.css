@@ -1,0 +1,118 @@
+.nav {
+    position: fixed;
+    min-height: 100vh;
+    display: block;
+    background: #fff;
+    overflow-x: hidden;
+    width: 17rem;
+    padding: 5.6rem 0.8rem 1rem;
+    border-right: 1px solid #e9eee7;
+    box-shadow: 10px 0 30px rgba(26, 42, 30, 0.07);
+}
+
+.navBtn {
+    margin-left: 17rem;
+    background: #28734e;
+    color: white;
+    padding: 0.95rem 1rem;
+    font-size: 1.15rem;
+    width: fit-content;
+    cursor: pointer;
+    border-radius: 0 0 12px 0;
+    box-shadow: 0 5px 16px rgba(25, 70, 46, 0.2);
+}
+
+.navWrap {
+    position: fixed;
+    z-index: 1001;
+}
+
+.logo {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.94);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 4.5rem;
+    padding: 0 1.5rem;
+    color: #20372a;
+    font-size: 1.1rem;
+    font-weight: bold;
+    position: fixed;
+    z-index: 1000;
+    border-bottom: 1px solid #e8ede6;
+    box-shadow: 0 4px 20px rgba(26, 42, 30, 0.04);
+    backdrop-filter: blur(12px);
+}
+
+.logo span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.logo span::before {
+    content: "M";
+    display: grid;
+    width: 2.1rem;
+    height: 2.1rem;
+    place-items: center;
+    border-radius: 10px;
+    background: #e7f2e9;
+    color: #28734e;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.gap {
+    display: block;
+    height: 4.5rem;
+}
+
+.menu {
+    z-index: 999;
+}
+
+.nav :global(.ant-menu) {
+    border: 0;
+    background: transparent;
+}
+
+.nav :global(.ant-menu-item) {
+    height: 46px;
+    line-height: 46px;
+    margin: 5px 0;
+    border-radius: 10px;
+    color: #536157;
+    font-weight: 550;
+}
+
+.nav :global(.ant-menu-item::after) {
+    display: none;
+}
+
+.nav :global(.ant-menu-item-selected) {
+    color: #28734e;
+    background: #eaf3eb;
+}
+
+.nav :global(.ant-menu-item-selected a),
+.nav :global(.ant-menu-item-selected .anticon) {
+    color: #28734e;
+}
+
+.nav :global(.ant-menu-item:hover) {
+    color: #28734e;
+    background: #f2f7f1;
+}
+
+@media (max-width: 600px) {
+    .logo {
+        height: 4rem;
+        padding-left: 1rem;
+    }
+
+    .gap {
+        height: 4rem;
+    }
+}

@@ -1,0 +1,127 @@
+.body {
+    display: flex;
+    justify-content: center;
+    width: min(100% - 2rem, 48rem);
+    margin: 2rem auto;
+}
+
+.card {
+    width: 100%;
+    padding: clamp(1rem, 4vw, 2rem);
+    text-align: center;
+}
+
+.eyebrow {
+    color: #3b8057;
+    font-size: 0.72rem;
+    font-weight: 750;
+    letter-spacing: 0.14em;
+}
+
+.card h1 {
+    margin: 0.45rem 0;
+    font-size: clamp(1.6rem, 5vw, 2.2rem);
+    font-weight: 750;
+}
+
+.description {
+    margin: 0 auto 1.25rem;
+    max-width: 34rem;
+    color: #718075;
+    line-height: 1.65;
+}
+
+.radio {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+
+.radio :global(.ant-radio-button-wrapper) {
+    height: auto;
+    min-height: 40px;
+    padding: 0.5rem 0.85rem;
+    line-height: 1.4;
+    white-space: normal;
+}
+
+.scanner {
+    display: grid;
+    min-height: 17rem;
+    margin: 0 auto 1rem;
+    width: min(100%, 26rem);
+    overflow: hidden;
+    place-items: center;
+    border: 1px dashed #cbd9ca;
+    border-radius: 16px;
+    background: #f7faf6;
+}
+
+.qrreader {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.qrreader video {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.scannerMessage {
+    padding: 1.5rem;
+    color: #718075;
+    line-height: 1.6;
+}
+
+.result {
+    display: grid;
+    justify-items: center;
+    gap: 0.5rem;
+    padding: 1.5rem;
+}
+
+.result strong {
+    max-width: 19rem;
+    color: #48554b;
+    line-height: 1.5;
+}
+
+.icon {
+    font-size: 7rem;
+}
+
+.success {
+    color: #2e8b57;
+}
+
+.failure {
+    color: #c94d4d;
+}
+
+@media (max-width: 600px) {
+    .body {
+        width: calc(100% - 1rem);
+        margin: 1rem auto;
+    }
+
+    .card {
+        padding: 1rem 0.7rem;
+    }
+
+    .radio :global(.ant-radio-group) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.35rem;
+    }
+
+    .radio :global(.ant-radio-button-wrapper) {
+        border-radius: 8px;
+    }
+
+    .scanner {
+        min-height: 14rem;
+    }
+}

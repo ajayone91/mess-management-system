@@ -1,0 +1,93 @@
+.menuBody {
+    width: min(100% - 2.5rem, 76rem);
+    margin: 1.8rem auto 4rem;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    margin: 0 0 2rem;
+    padding: clamp(2rem, 6vw, 4rem);
+    border: 1px solid #dce9dd;
+    border-radius: 24px;
+    background:
+        radial-gradient(ellipse at 88% 18%, rgba(197, 224, 193, 0.55), transparent 34%),
+        linear-gradient(115deg, #edf5e9 0%, #f7f8ef 64%, #f8f4e9 100%);
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    right: 8%;
+    bottom: -5rem;
+    width: 13rem;
+    height: 13rem;
+    border: 1px solid rgba(54, 116, 71, 0.12);
+    border-radius: 50%;
+    box-shadow: 0 0 0 1.5rem rgba(54, 116, 71, 0.035), 0 0 0 3rem rgba(54, 116, 71, 0.025);
+    pointer-events: none;
+}
+
+.eyebrow,
+.sectionEyebrow {
+    color: #3b8057;
+    font-size: 0.72rem;
+    font-weight: 750;
+    letter-spacing: 0.14em;
+}
+
+.hero h1 {
+    position: relative;
+    z-index: 1;
+    margin: 0.6rem 0 0.45rem;
+    font-size: clamp(2rem, 5vw, 3.35rem);
+    line-height: 1.08;
+    font-weight: 750;
+}
+
+.hero p {
+    position: relative;
+    z-index: 1;
+    max-width: 34rem;
+    margin: 0;
+    color: #667469;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.section {
+    margin: 0 0 2rem;
+    padding: clamp(1rem, 2.5vw, 1.6rem);
+    border: 1px solid #e7ece5;
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0 8px 28px rgba(27, 46, 32, 0.04);
+}
+
+.sectionHeading {
+    margin: 0 0 0.8rem;
+}
+
+.sectionHeading h2 {
+    margin: 0.25rem 0 0;
+    font-size: 1.55rem;
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    .menuBody {
+        width: calc(100% - 1.25rem);
+        margin-top: 1rem;
+    }
+
+    .hero {
+        margin-bottom: 1rem;
+        border-radius: 18px;
+    }
+
+    .section {
+        margin-bottom: 1rem;
+        padding: 0.9rem;
+        border-radius: 14px;
+    }
+}

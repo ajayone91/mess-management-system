@@ -1,0 +1,203 @@
+.adminPage {
+    width: min(100% - 2.5rem, 80rem);
+    margin: 1.8rem auto 4rem;
+}
+
+.hero {
+    margin-bottom: 1.5rem;
+    padding: clamp(1.8rem, 5vw, 3rem);
+    border: 1px solid #dce9dd;
+    border-radius: 22px;
+    background:
+        radial-gradient(ellipse at 92% 15%, rgba(193, 222, 188, 0.52), transparent 35%),
+        linear-gradient(115deg, #edf5e9 0%, #f7f8ef 68%, #f8f4e9 100%);
+}
+
+.eyebrow,
+.sectionEyebrow {
+    color: #3b8057;
+    font-size: 0.72rem;
+    font-weight: 750;
+    letter-spacing: 0.14em;
+}
+
+.hero h1 {
+    margin: 0.55rem 0 0.4rem;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 750;
+    line-height: 1.1;
+}
+
+.hero p {
+    margin: 0;
+    color: #667469;
+    font-size: 1rem;
+    line-height: 1.65;
+}
+
+.card {
+    width: 100%;
+}
+
+.sectionHeading {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.1rem;
+}
+
+.sectionIcon {
+    display: grid;
+    flex: 0 0 2.8rem;
+    width: 2.8rem;
+    height: 2.8rem;
+    place-items: center;
+    border-radius: 12px;
+    background: #eaf3eb;
+    color: #28734e;
+    font-size: 1.15rem;
+}
+
+.sectionHeading > div:nth-child(2) {
+    flex: 1;
+    min-width: 0;
+}
+
+.sectionHeading h2 {
+    margin: 0.2rem 0 0.2rem;
+    font-size: 1.45rem;
+    font-weight: 700;
+}
+
+.sectionHeading p {
+    margin: 0;
+    color: #758078;
+    font-size: 0.9rem;
+}
+
+.statusTag {
+    margin: 0.25rem 0 0 auto;
+    padding: 0.25rem 0.6rem;
+    border-radius: 20px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.infoAlert,
+.validationAlert {
+    margin-bottom: 0.9rem;
+    border-radius: 10px;
+}
+
+.dayList {
+    display: grid;
+    gap: 0.85rem;
+}
+
+.daySection {
+    min-width: 0;
+    padding: 1rem;
+    border: 1px solid #e8ede6;
+    border-radius: 14px;
+    background: #fbfcfa;
+}
+
+.dayHeading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.55rem;
+}
+
+.dayHeading > div {
+    display: grid;
+    gap: 0.1rem;
+}
+
+.dayHeading > div > span {
+    color: #7b867d;
+    font-size: 0.8rem;
+}
+
+.dayTitle {
+    color: #26372b;
+    font-size: 1.05rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.table {
+    margin: 0.5rem 0 0;
+}
+
+.typeCell {
+    display: grid;
+    gap: 0.35rem;
+}
+
+.typeCell :global(.ant-tag) {
+    width: fit-content;
+    margin: 0;
+}
+
+.priceInput {
+    width: 100%;
+    max-width: 130px;
+    border-radius: 9px;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.65rem;
+    flex-wrap: wrap;
+    margin-top: 1.2rem;
+}
+
+@media (max-width: 600px) {
+    .adminPage {
+        width: calc(100% - 1.25rem);
+        margin-top: 1rem;
+    }
+
+    .hero {
+        margin-bottom: 1rem;
+        border-radius: 17px;
+    }
+
+    .sectionHeading {
+        flex-wrap: wrap;
+        gap: 0.7rem;
+    }
+
+    .sectionIcon {
+        flex-basis: 2.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .sectionHeading h2 {
+        font-size: 1.2rem;
+    }
+
+    .sectionHeading p {
+        font-size: 0.82rem;
+    }
+
+    .statusTag {
+        margin-left: 3.2rem;
+    }
+
+    .daySection {
+        padding: 0.65rem;
+    }
+
+    .actions {
+        justify-content: stretch;
+    }
+
+    .actions > button {
+        flex: 1;
+    }
+}

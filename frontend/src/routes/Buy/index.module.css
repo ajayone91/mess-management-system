@@ -1,0 +1,142 @@
+.buyBody {
+    width: min(100% - 2.5rem, 76rem);
+    margin: 1.8rem auto 4rem;
+}
+
+.hero {
+    margin-bottom: 1.5rem;
+    padding: clamp(1.8rem, 5vw, 3rem);
+    border: 1px solid #dce9dd;
+    border-radius: 22px;
+    background:
+        radial-gradient(ellipse at 92% 15%, rgba(193, 222, 188, 0.52), transparent 35%),
+        linear-gradient(115deg, #edf5e9 0%, #f7f8ef 68%, #f8f4e9 100%);
+}
+
+.eyebrow {
+    color: #3b8057;
+    font-size: 0.72rem;
+    font-weight: 750;
+    letter-spacing: 0.14em;
+}
+
+.hero h1 {
+    margin: 0.55rem 0 0.4rem;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 750;
+    line-height: 1.1;
+}
+
+.hero p {
+    margin: 0;
+    color: #667469;
+    font-size: 1rem;
+    line-height: 1.65;
+}
+
+.daySection {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #e7ece5;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 8px 28px rgba(27, 46, 32, 0.035);
+}
+
+.dayHeading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 0 0 0.65rem;
+}
+
+.dayHeading h2 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.table {
+    margin: 0;
+}
+
+.checkout {
+    position: sticky;
+    z-index: 20;
+    bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 1rem 1.2rem;
+    border: 1px solid #e1e9df;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 12px 35px rgba(27, 46, 32, 0.12);
+    backdrop-filter: blur(10px);
+}
+
+.total {
+    display: grid;
+    gap: 0.1rem;
+}
+
+.total span {
+    color: #718075;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.total strong {
+    color: #225d3c;
+    font-size: 1.45rem;
+}
+
+.buy {
+    margin: 0;
+}
+
+.empty {
+    padding: 2rem;
+    color: #718075;
+    text-align: center;
+}
+
+.bought {
+    width: 100%;
+    min-height: calc(100vh - 17vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .buyBody {
+        width: calc(100% - 1.25rem);
+        margin-top: 1rem;
+    }
+
+    .hero {
+        margin-bottom: 1rem;
+        border-radius: 17px;
+    }
+
+    .daySection {
+        padding: 0.65rem;
+        border-radius: 13px;
+    }
+
+    .checkout {
+        bottom: 0.5rem;
+        padding: 0.75rem;
+    }
+
+    .buy {
+        height: auto;
+        min-height: 42px;
+        white-space: normal;
+    }
+}
